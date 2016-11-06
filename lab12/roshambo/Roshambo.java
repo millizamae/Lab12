@@ -1,19 +1,21 @@
 package com.lab12.roshambo;
 
 public enum Roshambo {
-ROCK ("rock"),
-PAPER ("paper"),
-SCISSORS ("scissors");
+ROCK ("Rock"),
+PAPER ("Paper"),
+SCISSORS ("Scissors");
 
-private String roshChoice;
+	private String roshType;
 	
-private Roshambo(String choice){
-	this.roshChoice = choice; 
+	private Roshambo (String endRosh) {
+		this.roshType = endRosh;
+	}
+	@Override
+	public String toString(){
+		return roshType;
+	}
+	public void equalsIgnoreCase(String roshType) {
+	
+		
+	}
 }
-
-@Override 
-public String toString() {
-	return roshChoice; 
-}
-}
-

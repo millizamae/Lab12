@@ -3,14 +3,18 @@ package com.lab12.roshambo;
 
 public class Player1 extends Player {
 
-public Player1 (String name, String value){
-	super (name, value);
+	@Override
+	public void name() {
+		System.out.println("You have chosen, Rocky!");
+		
+	}
+
+	@Override
+	public Roshambo value() {
+		return Roshambo.ROCK; 
+		
+	}
 	
-}
-
+		
+	}
 	
-}
-
-
-
-
