@@ -65,55 +65,55 @@ public class RockPaperScissorsApp {
 			lose = 0;
 
 			if (rps == 1) {
-				switch (opp) {
-				case 1:
-					oppChoice.equalsIgnoreCase("rock");
+				switch (oppChoice) {
+				case ROCK:
+					//oppChoice.equalsIgnoreCase("rock");
 					draw++;
 					System.out.println("You chose Rock and that doesn't beat Rock. It's a Draw.");
 					break;
-				case 2:
-					oppChoice.equalsIgnoreCase("paper");
+				case PAPER:
+					//oppChoice.equalsIgnoreCase("paper");
 					lose++;
 					System.out.println("You chose Rock and that doesn't beat Paper. You Lose.");
 					break;
-				case 3:
-					oppChoice.equalsIgnoreCase("scissors");
+				case SCISSORS: 
+					// oppChoice.equalsIgnoreCase("scissors");
 					win++;
 					System.out.println("You chose Rock and that beats Scissors. You Win!");
 					break;
 				}
 			} else if (rps == 2) {
-				switch (opp) {
-				case 1:
-					oppChoice.equalsIgnoreCase("rock");
+				switch (oppChoice) {
+				case ROCK:
+					//oppChoice.equalsIgnoreCase("rock");
 					win++;
 					System.out.println("You chose Paper and that beats Rock. You Win!");
 					break;
-				case 2:
-					oppChoice.equalsIgnoreCase("paper");
+				case PAPER:
+					//oppChoice.equalsIgnoreCase("paper");
 					draw++;
 					System.out.println("You chose Paper and that doesn't beat Paper. It's a Draw.");
 					break;
-				case 3:
-					oppChoice.equalsIgnoreCase("scissors");
+				case SCISSORS:
+					//oppChoice.equalsIgnoreCase("scissors");
 					lose++;
 					System.out.println("You chose Paper and that doesn't doesn't beat Scissors. You've Lost.");
 					break;
 				}
 			} else if (rps == 3) {
-				switch (opp) {
-				case 1:
-					oppChoice.equalsIgnoreCase("rock");
+				switch (oppChoice) {
+				case ROCK:
+					// oppChoice.equalsIgnoreCase("rock");
 					lose++;
 					System.out.println("You chose Scissors and that doesn't beat Rock. You've Lost.");
 					break;
-				case 2:
-					oppChoice.equalsIgnoreCase("paper");
+				case PAPER:
+					// oppChoice.equalsIgnoreCase("paper");
 					win++;
 					System.out.println("You chose Scissors and that beats Paper. You Win!");
 					break;
-				case 3:
-					oppChoice.equalsIgnoreCase("scissors");
+				case SCISSORS:
+					// oppChoice.equalsIgnoreCase("scissors");
 					draw++;
 					System.out.println("You chose Scissors and that ties Scissors. It's a Draw.");
 					break;
